@@ -30,7 +30,7 @@ You can install requirements (optional):-
 pip3 install -r requirements.txt
 ```
 
-##Installation
+## Installation
 
 1. Clone the repository or download the script
 
@@ -47,7 +47,7 @@ cd SSHBrute
 
 
 
-##Usage
+## Usage
 
 Run the tool from the command line with the following syntax:
 
@@ -55,7 +55,7 @@ Run the tool from the command line with the following syntax:
 python3 ssh_bruteforce.py <target_ip> <username_wordlist> <password_wordlist>
 ```
 
-##Example
+## Example
 
 ```bash
 python3 ssh_bruteforce.py 192.168.1.100 usernames.txt passwords.txt
@@ -69,7 +69,7 @@ test.
 `password_wordlist`: Path to the text file containing passwords (one per line)
 
 
-##Output
+## Output
 
 The tool will display each username/password combination it attempts and indicate if a login was successful.
 
@@ -78,6 +78,6 @@ Trying username: admin, password: 123456
 Success! Username: admin, Password: 123456
 ```
 
-##License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
