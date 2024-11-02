@@ -19,5 +19,65 @@ SSHBrute is a command-line tool for performing brute-force attacks on SSH server
 
 You can install the required library using pip:
 
+`paramiko` is pre-installed in kalilinux 
+
 ```bash
 pip install paramiko
+```
+You can install requirements (optional):-
+
+```bash
+pip3 install -r requirements.txt
+```
+
+##Installation
+
+1. Clone the repository or download the script
+
+```bash
+git clone https://github.com/s-r-e-e-r-a-j/SSHBRUTE-TOOL.git
+```
+```bash
+cd SSHBRUTE-TOOL
+```
+```bash
+cd SSHBrute
+```
+2. Ensure you have the required dependencies installed (as mentioned above)
+
+
+
+##Usage
+
+Run the tool from the command line with the following syntax:
+
+```bash
+python3 ssh_bruteforce.py <target_ip> <username_wordlist> <password_wordlist>
+```
+
+##Example
+
+```bash
+python3 ssh_bruteforce.py 192.168.1.100 usernames.txt passwords.txt
+```
+
+`target_ip`: The IP address of the SSH server you want to 
+test.
+
+`username_wordlist`: Path to the text file containing usernames (one per line).
+
+`password_wordlist`: Path to the text file containing passwords (one per line)
+
+
+##Output
+
+The tool will display each username/password combination it attempts and indicate if a login was successful.
+
+```bash
+Trying username: admin, password: 123456
+Success! Username: admin, Password: 123456
+```
+
+##License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
