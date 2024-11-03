@@ -19,14 +19,14 @@ SSHBrute is a command-line tool for performing brute-force attacks on SSH server
 
 You can install the required library using pip:
 
-`paramiko` is pre-installed in kalilinux 
+`paramiko` is pre-installed in kalilinux so don't need to install it on kalilinux 
 
 ```bash
 pip install paramiko
 ```
 You can install requirements (optional if you are using kali linux):-
 
-`in kali linux all are pre-installed so don't need this on kali linux`
+`in kali linux all requirements are pre-installed so don't need this on kali linux`
 
 ```bash
 pip3 install -r requirements.txt
