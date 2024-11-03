@@ -24,7 +24,7 @@ You can install the required library using pip:
 ```bash
 pip install paramiko
 ```
-You can install requirements (optional if you are using kali linux):-
+### You can install requirements (optional if you are using kali linux):-
 
 `In kali linux all requirements are pre-installed so don't need this on kali linux`
 
