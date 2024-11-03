@@ -26,7 +26,7 @@ pip install paramiko
 ```
 ### You can install requirements (optional if you are using kali linux):-
 
-`In kali linux all requirements are pre-installed so don't need this on kali linux`
+`In kali linux all requirements for this tool  are pre-installed on it  .so don't need to install requirements for this tool on kali linux`
 
 ```bash
 pip3 install -r requirements.txt
