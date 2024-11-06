@@ -54,13 +54,13 @@ cd SSHBrute
 Run the tool from the command line with the following syntax:
 
 ```bash
-python3 ssh_bruteforce.py <target_ip> <username_wordlist> <password_wordlist>
+python3 sshbrute.py <target_ip> <username_wordlist> <password_wordlist>
 ```
 
 ## Example
 
 ```bash
-python3 ssh_bruteforce.py 192.168.1.100 usernames.txt passwords.txt
+python3 sshbrute.py 192.168.1.100 usernames.txt passwords.txt
 ```
 
 `target_ip`: The IP address of the SSH server you want to 
