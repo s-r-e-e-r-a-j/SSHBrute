@@ -40,7 +40,7 @@ pip3 install -r requirements.txt
 git clone https://github.com/s-r-e-e-r-a-j/SSHBRUTE-TOOL.git
 ```
 ```bash
-cd SSHBRUTE-TOOL
+cd SSHBrute
 ```
 ```bash
 cd SSHBrute
