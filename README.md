@@ -35,9 +35,7 @@ git clone https://github.com/s-r-e-e-r-a-j/SSHBrute.git
 ```bash
 cd SSHBrute
 ```
-### You can install requirements (optional if you are using kali linux):-
-
-`In kali linux all requirements for this tool  are pre-installed on it.requirements means the packages required for this tool to work.so don't need to install requirements for this tool on kali linux`
+2. Install required libraries 
 
 ```bash
 pip3 install -r requirements.txt
@@ -45,7 +43,7 @@ pip3 install -r requirements.txt
 ```bash
 cd SSHBrute
 ```
-2. Ensure you have the required dependencies installed (as mentioned above)
+3. Ensure you have the required dependencies installed (as mentioned above)
 
 
 
