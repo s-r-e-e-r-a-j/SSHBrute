@@ -43,7 +43,6 @@ pip3 install -r requirements.txt
 ```bash
 cd SSHBrute
 ```
-3. Ensure you have the required dependencies installed (as mentioned above)
 
 
 
