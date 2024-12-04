@@ -32,14 +32,17 @@ pip install paramiko
 ```bash
 git clone https://github.com/s-r-e-e-r-a-j/SSHBrute.git
 ```
+2. Navigate to the SSHBrute directory
 ```bash
 cd SSHBrute
 ```
-2. Install required libraries 
+3. Install required libraries 
 
 ```bash
 pip3 install -r requirements.txt
 ```
+4. Navigate to the SSHBrute directory
+   
 ```bash
 cd SSHBrute
 ```
