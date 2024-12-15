@@ -14,7 +14,7 @@ print("""\033[96m
                                                                                                
                         \033[0m
 \n
-\033[92m*  copyright © Sreeraj, 2024   *\n
+\033[92m*  Copyright © Sreeraj, 2024   *\n
 \n
 *  www.youtube.com/@debugspecter   *\n
 \n
