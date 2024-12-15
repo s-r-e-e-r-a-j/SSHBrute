@@ -10,15 +10,13 @@ print("""\033[96m
  | (___   | (___   | |__| | | |_) |  _ __   _   _  | |_    ___       
   \___ \   \___ \  |  __  | |  _ <  | '__| | | | | | __|  / _ \      
   ____) |  ____) | | |  | | | |_) | | |    | |_| | | |_  |  __/      
- |_____/  |_____/  |_|  |_| |____/  |_|     \__,_|  \__|  \___|      
-                                                                                               
+ |_____/  |_____/  |_|  |_| |____/  |_|     \__,_|  \__|  \___| 
+
+                                           Developer: Sreeraj                                                                                             
                         \033[0m
-\n
-\033[92m*  Copyright © Sreeraj, 2024   *\n
-\n
-*  www.youtube.com/@debugspecter   *\n
-\n
-*  https://github.com/s-r-e-e-r-a-j   *\n
+
+\033[92m*  Copyright © Sreeraj, 2024 
+* GitHub: https://github.com/s-r-e-e-r-a-j   *\n
    \033[0m""")
 print("\n");
 
