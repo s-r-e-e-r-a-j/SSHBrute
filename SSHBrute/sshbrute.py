@@ -14,9 +14,8 @@ print("""\033[96m
 
                                            Developer: Sreeraj                                                                                             
                         \033[0m
-
 \033[92m*  Copyright © Sreeraj, 2024 
-* GitHub: https://github.com/s-r-e-e-r-a-j   *\n
+* GitHub: https://github.com/s-r-e-e-r-a-j 
    \033[0m""")
 print("\n");
 
