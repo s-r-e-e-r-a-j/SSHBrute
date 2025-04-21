@@ -54,17 +54,20 @@ cd SSHBrute
 Run the tool from the command line with the following syntax:
 
 ```bash
-python3 sshbrute.py <target_ip> <username_wordlist> <password_wordlist>
+python3 sshbrute.py <target_ip> <target_port> <username_wordlist> <password_wordlist>
 ```
 
 ## Example
 
 ```bash
-python3 sshbrute.py 192.168.1.100 usernames.txt passwords.txt
+python3 sshbrute.py 192.168.1.100 22 usernames.txt passwords.txt
 ```
 
 `target_ip`: The IP address of the SSH server you want to 
 test.
+
+`target_port`: The port number of the SSH server (default is usually 22)
+
 
 `username_wordlist`: Path to the text file containing usernames (one per line).
 
