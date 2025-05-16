@@ -17,7 +17,7 @@ print(r"""
          
 """)
 
-print("\033[92m* GitHub: https://github.com/s-r-e-e-r-a-j\033[0m\n")
+print("\033[92m  * GitHub: https://github.com/s-r-e-e-r-a-j\033[0m\n")
 
 
 
