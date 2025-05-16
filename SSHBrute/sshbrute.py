@@ -2,7 +2,8 @@ import paramiko
 import time
 import argparse
 
-print("""\033[96m
+print("\033[0m")
+print(r"""
 
 
    _____    _____   _    _   ____                   _            
@@ -13,15 +14,10 @@ print("""\033[96m
  |_____/  |_____/  |_|  |_| |____/  |_|     \__,_|  \__|  \___| 
 
                                            Developer: Sreeraj                                                                                             
-                        \033[0m
-\033[92m* GitHub: https://github.com/s-r-e-e-r-a-j 
-   \033[0m\n""")
+         
+""")
 
-
-
-
-
-
+print("\033[92m* GitHub: https://github.com/s-r-e-e-r-a-j\033[0m")
 
 
 
